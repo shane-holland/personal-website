@@ -10,6 +10,10 @@ const routes: Routes = [
         component: ConstructionComponent
     },
     {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
         path: 'not-found',
         component: NotFoundComponent
     },

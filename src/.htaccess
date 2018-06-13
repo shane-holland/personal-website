@@ -1,0 +1,21 @@
+DirectoryIndex index.html
+
+# 301 Permanent Redirects to preserve link juice
+
+# Redirect 301 /index.php http://www.shanemholland.com/
+# Redirect 301 /portfolio/index.php http://www.shanemholland.com/portfolio
+# Redirect 301 /portfolio/resume.php http://www.shanemholland.com/resume
+# Redirect 301 /about/contact.php http://www.shanemholland.com/contact-me
+
+# This Rewrite Rule allows 404s to route to index.html for angular to handle routing.
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # If an existing asset or directory is requested go to it as it is
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # If the requested resource doesn't exist, use index.html
+    RewriteRule ^ index.html [L]
+</IfModule>
