@@ -1,53 +1,30 @@
-<div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
-
-  <mat-toolbar color="primary" class="app-toolbar">
-    <mat-toolbar-row>
-      <span>Shane M. Holland</span>
-
-      <button mat-icon-button (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </mat-toolbar-row>
-  </mat-toolbar>
-
-  <mat-sidenav-container class="app-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+<div class="home-heading">
+  <span class="title">Mobile / Web <br /> Application Developer</span>
+</div>
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="shane-card-header-image"></div>
+    <mat-card-title>What I Do</mat-card-title>
+    <mat-card-subtitle>Shane Holland</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <span><!--Empty span to allow normal padding --></span>
+    <p>I build mobile and web applications, and websites, using modern tools, frameworks, design patterns, and best practices.</p>
+    
+    <mat-divider></mat-divider>
 
     
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <button mat-button>All</button>
+  <button mat-raised-button>Of</button>
+  <button mat-raised-button color="primary">The</button>
+  <button mat-raised-button color="accent">Buttons</button>
+</mat-card>
 
-    <mat-sidenav-content>
-      <mat-card>
-        <mat-grid-list cols="2" rowHeight="200px">
-          <mat-grid-tile>
-            <img class="profile-photo" src="../../assets/images/shane-profile.jpg" alt="Shane M. Holland" />
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <p>Hello World!</p>
-          </mat-grid-tile>
-          <mat-grid-tile colspan="2">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-          </mat-grid-tile>
-        </mat-grid-list>
-      </mat-card>
-      <mat-card>
-        <button mat-button>All</button>
-        <button mat-raised-button>Of</button>
-        <button mat-raised-button color="primary">The</button>
-        <button mat-raised-button color="accent">Buttons</button>
-      </mat-card>
-
-      <span class="done">
-        <button mat-fab>
-          <mat-icon>check circle</mat-icon>
-        </button>
-      </span>
-    </mat-sidenav-content>
-
-    <mat-sidenav #drawer [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-
-      <p>Auto-resizing sidenav</p>
-      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-
-    </mat-sidenav>
-
-  </mat-sidenav-container>
-</div>
+<span class="done">
+  <button mat-fab>
+    <mat-icon>check circle</mat-icon>
+  </button>
+</span>

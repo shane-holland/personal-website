@@ -1,68 +1,22 @@
-<div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
+<mat-card>
+  <div class="cube-left">
+    <div class="cube-wrap">
+      <div class="cube">
+        <div class="face face-front"></div>
+        <div class="face face-back"></div>
+        <div class="face face-left"></div>
+        <div class="face face-right"></div>
+        <div class="face face-top"></div>
+        <div class="face face-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Sorry&hellip;</h1>
+    <p>We are in the process of reforming our web presence. The website will be unavailable while this occurs.</p>
 
-  <mat-toolbar color="primary" class="app-toolbar">
-    <mat-toolbar-row>
-      <!-- <button mat-icon-button (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button> -->
-
-      <span>Shane M. Holland</span>
-
-      <!-- <button mat-icon-button [mat-menu-trigger-for]="menu">
-        <mat-icon>more_vert</mat-icon>
-      </button> -->
-    </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Option 1</button>
-    <button mat-menu-item>Option 2</button>
-  </mat-menu>
-
-  <mat-sidenav-container class="app-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-
-    <mat-sidenav #drawer [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-
-      <p>Auto-resizing sidenav</p>
-      <p>Lorem, ipsum dolor sit amet consectetur.</p>
-
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-      <mat-card>
-        <div class="cube-left">
-            <div class="cube-wrap">
-              <div class="cube">
-                <div class="face face-front"></div>
-                <div class="face face-back"></div>
-                <div class="face face-left"></div>
-                <div class="face face-right"></div>
-                <div class="face face-top"></div>
-                <div class="face face-bottom"></div>
-              </div>
-            </div>
-          </div>
-          <div class="content">
-            <h1>Sorry&hellip;</h1>
-            <p>We are in the process of reforming our web presence. The website will be unavailable 
-              while this occurs.</p>
-
-              <p>Please check again later.</p>  
-              <p>If you have urgent questions or concerns, please direct them to me at
-              <a href="mailto:shane.m.holland@gmail.com">shane.m.holland@gmail.com</a>.</p>
-          </div>        
-      </mat-card>
-      <!-- <mat-card>
-        <button mat-button>All</button>
-        <button mat-raised-button>Of</button>
-        <button mat-raised-button color="primary">The</button>
-        <button mat-raised-button color="accent">Buttons</button>
-      </mat-card> -->
-
-      <!-- <span class="done">
-        <button mat-fab>
-          <mat-icon>check circle</mat-icon>
-        </button>
-      </span> -->
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-</div>
+    <p>Please check again later.</p>
+    <p>If you have urgent questions or concerns, please direct them to me at
+      <a href="mailto:shane.m.holland@gmail.com">shane.m.holland@gmail.com</a>.</p>
+  </div>
+</mat-card>

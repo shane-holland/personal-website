@@ -1,0 +1,7 @@
+.app-toolbar button {
+    display:none;
+}
+
+.app-is-mobile .app-toolbar button {
+    display:block;
+}

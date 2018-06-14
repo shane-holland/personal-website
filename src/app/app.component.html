@@ -1,5 +1,38 @@
 <div #appDiv style="text-align:center">
 
-  <router-outlet #MyMainOutlet></router-outlet>
+  <div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
+
+    <mat-toolbar color="primary" class="app-toolbar">
+      <mat-toolbar-row>
+          <button mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+
+        <span>Shane M. Holland</span>
+
+        <span></span>
+        
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="app-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+
+      <mat-sidenav-content>
+        <router-outlet #MyMainOutlet></router-outlet>
+
+        <app-footer></app-footer>
+      </mat-sidenav-content>
+
+      <mat-sidenav #drawer [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+
+        <app-nav-drawer></app-nav-drawer>
+
+      </mat-sidenav>
+
+    </mat-sidenav-container>
+
+  </div>  
+
+  
 
 </div>

@@ -1,7 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
-import { HomeComponent } from './views/home/home.component';
+
 import { ConstructionComponent } from './views/construction/construction.component';
+import { HomeComponent } from './views/home/home.component';
+import { AboutMeComponent } from './views/about-me/about-me.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 
 const routes: Routes = [
@@ -12,6 +14,22 @@ const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent
+    },
+    {
+        path: 'about-me',
+        component: AboutMeComponent
+    },
+    {
+        path: 'portfolio',
+        component: NotFoundComponent
+    },
+    {
+        path: 'resume',
+        component: NotFoundComponent
+    },
+    {
+        path: 'contact-me',
+        component: NotFoundComponent
     },
     {
         path: 'not-found',

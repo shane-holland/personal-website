@@ -10,6 +10,12 @@ import { appRouting } from './app.routing';
 import { HomeComponent } from './views/home/home.component';
 import { ConstructionComponent } from './views/construction/construction.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { AboutMeComponent } from './views/about-me/about-me.component';
+import { PortfolioComponent } from './views/portfolio/portfolio.component';
+import { ResumeComponent } from './views/resume/resume.component';
+import { ContactMeComponent } from './views/contact-me/contact-me.component';
+import { FooterComponent } from './uiComponents/footer/footer.component';
+import { NavDrawerComponent } from './uiComponents/nav-drawer/nav-drawer.component';
 
 
 @NgModule({
@@ -17,7 +23,13 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     AppComponent,
     HomeComponent,
     ConstructionComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutMeComponent,
+    PortfolioComponent,
+    ResumeComponent,
+    ContactMeComponent,
+    FooterComponent,
+    NavDrawerComponent
   ],
   imports: [
     BrowserModule,
